@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     pokemons = []
 
-    for i in range(1, 25):
+    for i in range(1, 5):
         pokemon = get_pokemon(i)
 
         # para executar a função 'xp_rank', preenchemos a lista 'pokemons',
@@ -53,7 +53,8 @@ if __name__ == "__main__":
         print('Nome: ', pokemon['name'])
         print('Altura: ', pokemon['height'])
         print('Peso: ', pokemon['weight'])
-        print('Habilidades: ', pokemon['abilities'])
+        print('Habilidades: ', pokemon['abilities'][0]['ability']['name'],
+              ', ', pokemon['abilities'][1]['ability']['name'])
         print('Experiência base: ', pokemon['base_experience'])
         print('Link para foto: ', pokemon['sprites']['front_default'])
         print('\n')
